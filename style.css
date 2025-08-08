@@ -34,21 +34,20 @@ header input {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* This makes it fixed within banner */
+    background-attachment: fixed;
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
-    position: relative;
 }
+
 .banner-text {
-    background: rgba(0, 0, 0, 0.5); /* Darken for readability */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
     border-radius: 10px;
 }
-
 
 /* Welcome */
 .welcome {
@@ -117,6 +116,7 @@ header input {
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .content-box img {
@@ -129,9 +129,26 @@ header input {
     flex: 1;
 }
 
+
+
 .content-box h3 {
     color: #013220;
     margin-bottom: 10px;
+    font-size: 28px; /* Increased font size */
+}
+
+
+
+.content-box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;   /* Increased font size */
+    line-height: 1.7;  /* Better readability */
+}
+
+/* Zigzag layout */
+.content-box:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 /* Footer */
